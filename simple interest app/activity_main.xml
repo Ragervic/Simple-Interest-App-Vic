@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:textColor="@color/white"
+                android:text="SIMPLE INTEREST CALCULATOR"
+                android:background="#3F51B5"
+                android:paddingTop="20sp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:text="Principal Amount : "
+                    android:paddingLeft="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    ></TextView>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="match_parent"
+                    android:hint="100000"
+                    android:id="@+id/principalAmount"
+                    android:inputType="numberDecimal"
+                    ></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:text="Time (years) : "
+                    android:paddingLeft="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    ></TextView>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="match_parent"
+                    android:hint="2"
+                    android:id="@+id/time"
+                    android:inputType="numberDecimal"
+                    ></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:text="Rate of Interest (%) : "
+                    android:paddingLeft="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    ></TextView>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="match_parent"
+                    android:hint="7.5"
+                    android:id="@+id/rate"
+                    android:inputType="numberDecimal"
+                    ></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="180sp"
+                    android:layout_height="60sp"
+                    android:layout_marginLeft="20sp"
+                    android:backgroundTint="#5B9BD5"
+                    android:text="Reset"
+                    android:textStyle="bold"
+                    android:id="@+id/reset"
+                    ></Button>
+
+                <Button
+                    android:layout_width="180sp"
+                    android:layout_height="60sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#5B9BD5"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/calculate"
+                    android:text="Calculate"></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:text="RESULT"
+                    android:paddingTop="15sp"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180sp"
+                    android:layout_height="60sp"
+                    android:text="Simple Interest : "
+                    android:paddingLeft="20sp"
+                    android:background="#EDEDED"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="60sp"
+                    android:layout_marginRight="10sp"
+                    android:text="4500"
+                    android:textAlignment="center"
+                    android:paddingTop="30sp"
+                    android:textColor="#E00012"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/simpleInterest"
+                    ></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
